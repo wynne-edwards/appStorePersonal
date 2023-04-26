@@ -88,6 +88,7 @@ document.getElementById("popup-exit1").addEventListener("click", function() { do
 document.getElementById("popup-exit2").addEventListener("click", function() { document.getElementById("emeraldConsulting").style.display = "none";});
 document.getElementById("popup-exit3").addEventListener("click", function() { document.getElementById("scrimBot").style.display = "none";});
 document.getElementById("popup-exit4").addEventListener("click", function() { document.getElementById("personalCVPage").style.display = "none";});
+document.getElementById("popup-exit5").addEventListener("click", function() { document.getElementById("noticePopup").style.display = "none";});
 
 document.getElementById("grid1").addEventListener("click", function() { document.getElementById("levelUpMerch").style.display = "block";});
 document.getElementById("grid2").addEventListener("click", function() { document.getElementById("emeraldConsulting").style.display = "block";});
