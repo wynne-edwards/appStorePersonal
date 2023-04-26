@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynne Edwards</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="reset.css">
+    <script defer src="app.js"></script>
+</head>
+<nav class="nav">
+    <div class="navLogoContainer">
+        <div class="navLogo">
+            <div class="logo">
+                <>
+            </div>
+
+            <div class="logoName">
+                <div class="firstname">Wynne</div>
+                <div class="lastname">Edwards</div>
+            </div>
+        </div>
+    </div>
+    <div class="navGenresContainer">
+        <div class="navGenresOverall">
+            <div class="navGenres" id="games">Games</div>
+            <div class="navGenres" id="Apps">Apps</div>
+            <div class="navGenres" id="Movies">Movies</div>
+            <div class="navGenres" id="Books">Books</div>
+        </div>
+    </div>
+    <div class="navProfileContainer">
+        <div class="navProfileOverall">
+            <div class="navProfile" id="search"><svg class="profileIcons" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="10" cy="10" r="7"></circle>
+                    <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg></div>
+            <div class="navProfile" id="help"><svg class="profileIcons" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-help" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <line x1="12" y1="17" x2="12" y2="17.01"></line>
+                    <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
+                </svg></div>
+            <div class="navProfile" id="profile"><img src="./images/meimg.png" height="35px" class="profile"></div>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="resolutionContainer">
+        <div class="resButtonsOverall">
+            <div class="resButtons" id="TV"><button onclick="tvPressed()">
+                    <p id="TVButton" class="resText">
+                        <svg id="TVIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-device-tv" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                            <polyline points="16 3 12 7 8 3"></polyline>
+                        </svg>TV
+                    </p>
+                </button></div>
+            <div class="resButtons" id="PC"><button onclick="pcPressed()">
+                    <p id="PCButton" class="resText">
+                        <svg id="PCIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-device-laptop" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <line x1="3" y1="19" x2="21" y2="19"></line>
+                            <rect x="5" y="6" width="14" height="10" rx="1"></rect>
+                        </svg>PC
+                    </p>
+                </button></div>
+            <div class="resButtons" id="Tablet"><button onclick="tabletPressed()">
+                    <p id="tabletButton" class="resText">
+                        <svg id="tabletIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-device-tablet" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="5" y="3" width="14" height="18" rx="1"></rect>
+                            <circle cx="12" cy="17" r="1"></circle>
+                        </svg>Tablet
+                    </p>
+                </button></div>
+            <div class="resButtons" id="Phone"><button onclick="phonePressed()">
+                    <p id="phoneButton" class="resText">
+                        <svg id="phoneIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-device-mobile" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="6" y="3" width="12" height="18" rx="2"></rect>
+                            <line x1="11" y1="4" x2="13" y2="4"></line>
+                            <line x1="12" y1="17" x2="12" y2="17.01"></line>
+                        </svg>Phone
+                    </p>
+                </button></div>
+        </div>
+    </div>
+    <main>
+        
+          
+        <div class="chartContainer" id = "test">
+            <div class="chartOverall">
+                <div class="topChart">Top charts</div>
+                <div class="selectorChart">
+                    <div class="chartButtons" id="freeChart"><button onclick="freePressed()">
+                            <p class="chartText" id="freeText">Top Free</p>
+                        </button></div>
+                    <div class="chartButtons" id="grossingChart"><button onclick="grossingPressed()">
+                            <p class="chartText" id="grossingText">Top Grossing</p>
+                        </button></div>
+                    <div class="chartButtons" id="paidChart"><button onclick="paidPressed()">
+                            <p class="chartText" id="paidText">Top Paid</p>
+                        </button></div>
+                </div>
+                <div class="projectsGrid">
+                    <div class="gridItem" id="grid1">
+                        <div class="projectsNumber">1</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/levelUpMerchLogo.png"></div>
+                            <div class="projectsHeader">Level Up Merch</div>
+                            <div class="projectsGenre">Merch</div>
+                            <div class="projectsRating">4.0<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid2">
+                        <div class="projectsNumber">2</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/EmeraldConsultingNewLogo.png"></div>
+                            <div class="projectsHeader">Emerald Consulting</div>
+                            <div class="projectsGenre">Consulting</div>
+                            <div class="projectsRating">3.9<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid3">
+                        <div class="projectsNumber">3</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/ScrimBotimage.jpg"></div>
+                            <div class="projectsHeader">Scrim Bot</div>
+                            <div class="projectsGenre">Discord Bot</div>
+                            <div class="projectsRating">3.0<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid4">
+                        <div class="projectsNumber">4</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/java.png"></div>
+                            <div class="projectsHeader">CV</div>
+                            <div class="projectsGenre">Personal Website</div>
+                            <div class="projectsRating">4.0<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid5">
+                        <div class="projectsNumber">5</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/comingSoon.png"></div>
+                            <div class="projectsHeader">Coming Soon</div>
+                            <div class="projectsGenre">Genre</div>
+                            <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid6">
+                        <div class="projectsNumber">6</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/comingSoon.png"></div>
+                            <div class="projectsHeader">Coming Soon</div>
+                            <div class="projectsGenre">Genre</div>
+                            <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid7">
+                        <div class="projectsNumber">7</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/comingSoon.png"></div>
+                            <div class="projectsHeader">Coming Soon</div>
+                            <div class="projectsGenre">Genre</div>
+                            <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid8">
+                        <div class="projectsNumber">8</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/comingSoon.png"></div>
+                            <div class="projectsHeader">Coming Soon</div>
+                            <div class="projectsGenre">Genre</div>
+                            <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="gridItem" id="grid9">
+                        <div class="projectsNumber">9</div>
+                        <div class="projectsGridManager">
+                            <div class="projectsImage"><img src="./images/comingSoon.png"></div>
+                            <div class="projectsHeader">Coming Soon</div>
+                            <div class="projectsGenre">Genre</div>
+                            <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommendedContainer">
+            <div class="recommendedOverall">
+                <div class="recomendedForYou">Recommended for you
+                    <div class="recommendedSubHeading">Breakdown of applications created by me
+                        <table class="recommendedTable">
+                            <tr>
+                                <td class="Smartsheets hidden">
+                                    <video id=smartsheetsVid width="400" height="400" autoplay muted loop>
+                                        <source src="images/smartsheets.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+
+                                <td class="Googlesheets hidden">
+                                    <video id=googlesheetsVid width="400" height="400" autoplay muted loop>
+                                        <source src="images/googlesheets.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td class="Googlecalendar hidden">
+                                    <img src="images/googleCalendar.png" id="googleCalendarImg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="SmartsheetsName">
+                                    <div class="projectsImage"><img src="./images/smartsheets.png"></div>
+                                    <div class="projectsHeader">Smartsheets to Sheets</div>
+                                    <div class="projectsGenre">Take information from smartsheets and <br> move into the
+                                        Google ecosystem</div>
+                                    <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-star" width="24" height="10"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                            </path>
+                                        </svg></div>
+                    </div>
+                    </td>
+                    <td class="GooglesheetsName">
+                        <div class="projectsImage"><img src="./images/googleSheets.png"></div>
+                        <div class="projectsHeader">Sheets to Calendar</div>
+                        <div class="projectsGenre">Filter relevant data in google sheets and <br> push to Google
+                            Calendar</div>
+                        <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                </path>
+                            </svg></div>
+                </div>
+                </td>
+                <td class="GooglecalendarName">
+                    <div class="projectsImage"><img src="./images/googleCalendarLogo.png"></div>
+                    <div class="projectsHeader">Dynamic Calendar</div>
+                    <div class="projectsGenre">Dynamic calendar that pushes each individual's dates to their own
+                        calendar</div>
+                    <div class="projectsRating">4.2<svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-star" width="24" height="10" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                            </path>
+                        </svg></div>
+            </div>
+            </td>
+            </tr>
+            </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <hr class="solid">
+        <div class="wynneContainer">
+            <div class="wynneOverall">
+                <button type="submit" id = "cvId" class = "wynneCV"><a href="cv.html">Wynne Edwards</a>
+            </div>
+        </div>
+    </main>
+    <div class="popup" id = "levelUpMerch">
+        <div class="popup-content">
+          <span class="popup-exit" id = "popup-exit1">&times;</span>
+          <h2 class="popup-title">Level Up Merch</h2>
+          <p class="popup-description">This is a website I designed and built in order to learn more about web development. <br><br> Please note this is not a finished product.</p>
+          <button class="popup-button"><a href="./LUM/index.html">View Website</a></button>
+          <button class="popup-button"><a href="https://github.com/wynne-edwards/levelupmerch">View Github</a></button>
+        </div>
+      </div>
+      <div class="popup" id = "emeraldConsulting">
+        <div class="popup-content">
+          <span class="popup-exit" id = "popup-exit2">&times;</span>
+          <h2 class="popup-title">Emerald Consulting</h2>
+          <p class="popup-description">I was requested to show off my skills by improving an existing website, and this is my take on that. <br><br> Please note this is not a finished product.</p>
+          <button class="popup-button"><a href="./EmeraldConsulting/index3.html">View Website</a></button>
+          <button class="popup-button"><a href="https://github.com/wynne-edwards/emeraldconsulting">View Github</a></button>
+        </div>
+      </div>
+      <div class="popup" id = "scrimBot">
+        <div class="popup-content">
+          <span class="popup-exit" id = "popup-exit3">&times;</span>
+          <h2 class="popup-title">Scrim Bot</h2>
+          <p class="popup-description">A very personal project, a game I thoroughly enjoy is Rocket League. But I found that it was difficult to organise games in the scene so I decided to attempt to solve that, with this discord bot. <br><br> Please note this is not a finished product.</p>
+          <button class="popup-button"><a href ="https://github.com/wynne-edwards/ScrimBot">View Github</a></button>
+        </div>
+      </div>
+      <div class="popup" id = "personalCVPage">
+        <div class="popup-content">
+          <span class="popup-exit" id = "popup-exit4">&times;</span>
+          <h2 class="popup-title">Personal CV page</h2>
+          <p class="popup-description">This was the first website I created, its very clunky but I thought it would be useful to show progress in how I have advanced as a programmer <br><br>Please note this is not a finished product.</p>
+          <button class="popup-button"><a href="./CV/index.html">View Website</a></button>
+          <button class="popup-button">View Github</button>
+        </div>
+      </div>
+</body>
+
+</html>

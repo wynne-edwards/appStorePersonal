@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+.nav {
+  display: inline-flex;
+  font-family: "Source Sans Pro";
+  width: 100%;
+  height: 64px;
+  left: 0px;
+  line-height: 64px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav .navLogoContainer {
+  width: 15%;
+}
+
+.nav .navLogoContainer .navLogo {
+  display: inline-flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #706C61;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.nav .navLogoContainer .navLogo .logo {
+  font-size: 37px;
+  font-weight: bold;
+  color: #FF8966;
+  line-height: 57px;
+}
+
+.nav .navLogoContainer .navLogo .logoName {
+  display: inline-flex;
+  padding-left: 5px;
+}
+
+.nav .navLogoContainer .navLogo .logoName .firstname {
+  line-height: 63px;
+  font-size: 22px;
+}
+
+.nav .navLogoContainer .navLogo .logoName .lastname {
+  padding-left: 5px;
+  font-weight: 700;
+}
+
+.nav .navGenresContainer {
+  width: 75%;
+}
+
+.nav .navGenresContainer .navGenresOverall {
+  left: 5px;
+  color: #706C61;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.nav .navGenresContainer .navGenresOverall .navGenres {
+  text-align: center;
+  width: 80px;
+}
+
+.nav .navProfileContainer {
+  width: 10%;
+}
+
+.nav .navProfileContainer .navProfileOverall {
+  display: inline-flex;
+}
+
+.nav .navProfileContainer .navProfileOverall .navProfile {
+  width: 50px;
+  text-align: center;
+  height: 64px;
+  color: #2A2B2A;
+}
+
+.nav .navProfileContainer .navProfileOverall .navProfile .profile {
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.nav .navProfileContainer .navProfileOverall .navProfile .profileIcons {
+  margin-top: 20px;
+}
+
+.body {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.resolutionContainer {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  top: 20px;
+}
+
+.resolutionContainer .resButtonsOverall {
+  position: relative;
+  display: inline-flex;
+  text-align: center;
+  left: 15%;
+}
+
+.resolutionContainer .resButtonsOverall #PC {
+  position: relative;
+  left: 15px;
+  background: rgba(255, 137, 102, 0.6);
+  border-width: 0px;
+}
+
+.resolutionContainer .resButtonsOverall #PC #PCButton {
+  color: #A3320B;
+}
+
+.resolutionContainer .resButtonsOverall #Tablet {
+  position: relative;
+  left: 25px;
+}
+
+.resolutionContainer .resButtonsOverall #Phone {
+  position: relative;
+  left: 35px;
+}
+
+.resolutionContainer .resButtonsOverall #TVIcon,
+.resolutionContainer .resButtonsOverall #PCIcon,
+.resolutionContainer .resButtonsOverall #tabletIcon,
+.resolutionContainer .resButtonsOverall #phoneIcon {
+  position: relative;
+  left: -4px;
+  top: 5px;
+  transform: scale(0.8);
+}
+
+.resolutionContainer .resButtonsOverall .resButtons:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+.resolutionContainer .resButtonsOverall .resButtons {
+  width: 100px;
+  height: 30px;
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #706C61;
+}
+
+.resolutionContainer .resButtonsOverall .resButtons .resText {
+  position: relative;
+  height: 30px;
+  top: -4px;
+  color: #706C61;
+  font-size: 15px;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  top: 70px;
+}
+
+.chartContainer .chartOverall {
+  font-family: "Source Sans Pro";
+}
+
+.chartContainer .chartOverall .projectsGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  cursor: pointer;
+
+  left: 15%;
+  top: 50px;
+  width: 85%;
+}
+
+.chartContainer .chartOverall .projectsGrid #grid1 {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+}
+
+.chartContainer .chartOverall .projectsGrid .projectsGridManager {
+  position: relative;
+  height: 88px;
+  width: 450px;
+}
+
+.chartContainer .chartOverall .projectsGrid #grid1 .projectsGridManager {
+  position: relative;
+  top: 10px;
+}
+
+.chartContainer .chartOverall .projectsGrid #grid4 .projectsGridManager {
+  position: relative;
+  top: 10px;
+}
+
+
+.chartContainer .chartOverall .projectsGrid .gridItem {
+  text-align: left;
+  height: 88px;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem .projectsNumber {
+  position: relative;
+  line-height: 88px;
+  left: 25px;
+  color: #706C61;
+  font-weight: 600;
+  width: 20px;
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem .projectsImage {
+  position: relative;
+  transform: scale(0.15);
+  top: -235px;
+  left: -130px;
+  border-radius: 60px;
+  border-color: #706C61;
+  /* background-color: #2A2B2A; */
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem .projectsHeader {
+  position: relative;
+  font-size: 17px;
+  top: -450px;
+  left: 150px;
+  width: 300px;
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem .projectsGenre {
+  position: relative;
+  color: #706C61;
+  font-size: 14px;
+  top: -450px;
+  left: 150px;
+  width: 300px;
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem .projectsRating {
+  position: relative;
+  top: -450px;
+  left: 150px;
+  font-size: 13px;
+  color: #706C61;
+  font-weight: bold;
+  width: 300px;
+}
+
+.chartContainer .chartOverall .projectsGrid .gridItem:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+.chartContainer .chartOverall #freeChart {
+  background: rgba(255, 137, 102, 0.6);
+  border-width: 0px;
+}
+
+.chartContainer .chartOverall #freeChart #freeText {
+  color: #A3320B;
+}
+
+.chartContainer .chartOverall #grossingChart {
+  position: relative;
+  left: 15px;
+  width: 120px;
+}
+
+.chartContainer .chartOverall #paidChart {
+  position: relative;
+  left: 25px;
+}
+
+.chartContainer .chartOverall .topChart {
+  font-size: 22px;
+  position: relative;
+  font-weight: bold;
+  width: fit-content;
+  color: #706C61;
+  left: 15%;
+}
+
+.chartContainer .chartOverall .selectorChart {
+  position: relative;
+  display: inline-flex;
+  text-align: center;
+  left: 15%;
+  top: 15px;
+  font-family: "Nunito";
+}
+
+.chartContainer .chartOverall .selectorChart .chartButtons:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+.chartContainer .chartOverall .selectorChart .chartButtons {
+  width: 100px;
+  height: 30px;
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #706C61;
+}
+
+hr.solid {
+  position: relative;
+  border-top: 3px solid #bbb;
+  width: 1100px;
+  left: 22%;
+  top: 300px;
+}
+
+.wynneContainer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: 500px;
+}
+
+.wynneContainer .wynneOverall {
+  font-family: "Source Sans Pro";
+}
+.wynneCV:hover {
+  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
+  transform: translateY(-5px);
+}
+
+.wynneContainer .wynneOverall .wynneCV {
+  position: relative;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 300px;
+  color: white;
+  left:43%;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.recommendedContainer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: 70px;
+}
+
+.recommendedContainer .recommendedOverall {
+  font-family: "Source Sans Pro";
+  position: relative;
+  height: 500px;
+}
+
+.recommendedContainer .recommendedOverall .recomendedForYou {
+  font-size: 22px;
+  position: relative;
+  font-weight: bold;
+  color: #706C61;
+  left: 15%;
+  width: 85%;
+}
+
+.recommendedContainer .recommendedOverall .recomendedForYou .recommendedSubHeading {
+  font-size: 15px;
+  top: 5px;
+  position: relative;
+  font-weight: 350;
+
+}
+
+.recommendedTable {
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+}
+
+.recommendedContainer .recommendedOverall .projectsImage {
+  position: absolute;
+  left: 25px;
+  top: 322px;
+  /* background-color: #2A2B2A; */
+}
+
+.recommendedContainer .recommendedOverall .GooglesheetsName .projectsImage {
+  position: absolute;
+  left: 460px;
+  top: 322px;
+  /* background-color: #2A2B2A; */
+}
+
+.recommendedContainer .recommendedOverall .GooglecalendarName .projectsImage {
+  position: absolute;
+  left: 900px;
+  top: 322px;
+  /* background-color: #2A2B2A; */
+}
+
+.recommendedContainer .recommendedOverall .projectsHeader {
+  position: relative;
+  font-size: 20px;
+  left: 125px;
+  width: 300px;
+  font-weight: 500;
+}
+
+.recommendedContainer .recommendedOverall .projectsGenre {
+  position: relative;
+  color: #706C61;
+  font-size: 14px;
+  left: 125px;
+  width: 300px;
+}
+
+.recommendedContainer .recommendedOverall .projectsRating {
+  position: relative;
+  left: 125px;
+  font-size: 13px;
+  color: #706C61;
+  font-weight: bold;
+  width: 300px;
+}
+
+.recommendedContainer .recommendedOverall .recommendedTable .SmartsheetsName:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+.recommendedContainer .recommendedOverall .recommendedTable .GooglesheetsName:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+.recommendedContainer .recommendedOverall .recommendedTable .GooglecalendarName:hover {
+  background-color: rgba(112, 108, 97, 0.1);
+}
+
+#smartsheetsVid {
+  border: 5px solid #f3f3f3;
+  border-radius: 25px;
+  height: 270px;
+  margin: 20px;
+}
+
+#smartsheetsVid:hover {
+  transform: scale(1.1);
+}
+
+#googlesheetsVid {
+  border: 5px solid #f3f3f3;
+  border-radius: 25px;
+  height: 270px;
+  margin: 20px;
+}
+
+#googlesheetsVid:hover {
+  transform: scale(1.1);
+}
+
+#googleCalendarImg {
+  border: 5px solid #f3f3f3;
+  border-radius: 25px;
+  height: 270px;
+  margin: 20px;
+}
+
+#googleCalendarImg:hover {
+  transform: scale(1.1);
+}
+
+
+.chartContainer .chartOverall .selectorChart .chartButtons .chartText {
+  position: relative;
+  height: 30px;
+  top: 3px;
+  color: #706C61;
+  font-size: 15px;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+/*Popup*/
+  /* Popup container */
+  .popup {
+    /* Hidden by default */
+    display:none ;
+  position: fixed;/* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+   font-family: "Source Sans Pro";
+ }
+ 
+ /* Popup content */
+.popup-content {
+   background-color: #fefefe;
+   margin: 10% auto; /* 10% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 20%; /* Could be more or less, depending on screen size */
+ }
+ 
+ /* Popup exit button */
+.popup-exit {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+ 
+.popup-exit:hover,
+.popup-exit:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ /* Popup title */
+ .popup-title {
+   margin-top: 0;
+   font-size: 24px;
+   font-weight: 600;
+ }
+ 
+ /* Popup description */
+ .popup-description {
+   margin-bottom: 20px;
+   font-size: 16px;
+   font-weight: 400;
+ }
+ 
+ /* Popup buttons */
+ .popup-button {
+   background-color: #FF8966;
+   border: none;
+   color: #A3320B;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin-right: 10px;
+   cursor: pointer;
+   font-weight: bold;
+ }
+ 
+ .popup-button:hover {
+   background-color: #f87e59;
+ }
+ 
+/*# sourceMappingURL=style.css.map */
